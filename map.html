@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Map Page</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="resume.html">My Resume</a></li>
+      <li><a href="theme.html">My hobby</a></li>
+      <li><a href="map.html">Map</a></li>
+    </ul>
+  </nav>
+
+  <div class="fixed-container">
+    <h1>Google Map Demo</h1>
+    <div id="map" style="height: 500px;"></div>
+    <p>This page demonstrates a Google Map with extra features:</p>
+	<ul>
+	  <li>Marker on specific coordinate</li>
+	  <li>Info Window (pop-up text when clicking a marker)</li>
+	  <li>Custom map styles</li>
+	  <li>Zoom controls</li>
+  </div>
+  <script 
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer>
+  </script>
+</body>
+</html>

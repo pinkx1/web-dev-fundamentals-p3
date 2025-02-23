@@ -6,34 +6,55 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="resume.html">My Resume</a></li>
-        <li><a href="theme.html">My hobby</a></li>
+        <li><a href="theme.html">My Hobby</a></li>
+        <li><a href="map.html">Map</a></li>
       </ul>
     </nav>
 
     <div class="fluid-container">
       <h1>Welcome to My Project</h1>
       <p>This is the main page of the project. Below are some examples of HTML elements (and my cat)</p>
-	<div class="images-section">
       <h2>Images</h2>
-      <img src="media/mitya1.png" alt="My cat 1" width="300">
-      <img src="media/mitya2.png" alt="My cat 2" width="300">
-      <img src="media/mitya3.png" alt="My cat 3" width="300">
-	</div>
+      <div class="images-section">
+        
+        <img src="media/mitya1.png" alt="My cat 1" width="300">
+        <img src="media/mitya2.png" alt="My cat 2" width="300">
+        <img src="media/mitya3.png" alt="My cat 3" width="300">
+      </div>
+
       <h2>Audio</h2>
-      <audio controls>
-        <source src="media/ChipiChipiChapaChapa.mp3" type="audio/mpeg">
-      </audio>
+      <div class="custom-audio">
+        <audio id="myAudio">
+          <source src="media/ChipiChipiChapaChapa.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+        <div class="audio-controls">
+          <button id="playPauseBtn">Play</button>
+          <input type="range" id="progressBar" value="0" min="0" max="100">
+          <span id="timeDisplay">00:00 / 00:00</span>
+        </div>
+      </div>
 
       <h2>Video</h2>
-      <video controls>
-        <source src="media/dogs.mp4" type="video/mp4">
-      </video>
-	</div>
+      <div class="custom-video">
+        <video id="myVideo">
+          <source src="media/dogs.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="video-controls">
+          <button id="videoPlayPauseBtn">Play</button>
+          <input type="range" id="videoProgressBar" value="0" min="0" max="100">
+          <span id="videoTimeDisplay">00:00 / 00:00</span>
+          <button id="fullscreenBtn">Fullscreen</button>
+        </div>
+      </div>      
+    </div>
   </body>
 </html>
