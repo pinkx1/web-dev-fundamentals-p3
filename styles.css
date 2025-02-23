@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 400;
+  background-color: #fafafa;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+ul {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+.fluid-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.fixed-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.fixed-container header h1 {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+  }
+
+.fixed-container header h1 span {
+	font-size: 1rem;
+	color: #666;
+}
+
+.fixed-container section {
+	margin-bottom: 2rem;
+}
+
+.fixed-container section h2 {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 0.3rem;
+}
+
+.experience-item h3 {
+	margin-bottom: 0.5rem;
+	font-size: 1.1rem;
+	color: #0077cc;
+}
+  
+.experience-item ul {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+	list-style: disc;
+}
+  
+section:nth-of-type(4) ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+  
+section a {
+	color: #333;
+	text-decoration: underline;
+}
+
+section a:hover {
+	color: #0077cc;
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 5px;
+}
+
+nav li {
+  list-style-type: none; 
+}
+
+nav a {
+  font-weight: 600;
+  color: #333;
+  padding: 0.25em 0;
+}
+
+nav a:hover {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+}
+
+img, video, audio {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.images-section {
+	display: flex; 
+	justify-content: space-between; 
+  }
