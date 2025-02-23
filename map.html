@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Убираем лишний / в конце тега -->
+  <meta charset="UTF-8">
+  <!-- То же самое здесь -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map Page</title>
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Ссылки на CSS без / -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Подключаем JS-файл (defer) -->
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,11 +26,12 @@
     <h1>Google Map Demo</h1>
     <div id="map" style="height: 500px;"></div>
     <p>This page demonstrates a Google Map with extra features:</p>
-	<ul>
-	  <li>Marker on specific coordinate</li>
-	  <li>Info Window (pop-up text when clicking a marker)</li>
-	  <li>Custom map styles</li>
-	  <li>Zoom controls</li>
+    <ul>
+      <li>Marker on specific coordinate</li>
+      <li>Info Window (pop-up text when clicking a marker)</li>
+      <li>Custom map styles</li>
+      <li>Zoom controls</li>
+    </ul>
   </div>
   <script 
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
